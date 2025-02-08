@@ -37,3 +37,6 @@
     transition: 0.3s ease-in-out;
     }
   }
+ .bg-footer{
+    background:linear-gradient( to top,rgb(0, 101, 12),rgb(3, 170, 0) ) ;
+ }
