@@ -272,3 +272,29 @@ button2:active {
 button2:active:after {
   box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
 }
+.contenedor2{
+    padding: 5px;
+}
+.carousel-item img{
+
+    width: 1000px;
+    height: 800px;
+    object-fit: cover;
+    }
+#carouselExampleFade{
+    max-width: 1200px; 
+    max-height: 600px; 
+    margin: 0 auto; 
+    margin-top: 20px;
+    border-radius: 20px; 
+    border: 3px solid #000000; 
+    overflow:hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+}
+.texto1{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style:italic;
+    background-color: #008542;
+    border-radius: 10px;
+}
