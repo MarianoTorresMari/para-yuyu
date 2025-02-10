@@ -24,27 +24,20 @@
     font-family: "Abril Fatface", serif;
     font-weight: 600;
     font-style: normal;
-    background:linear-gradient( to bottom,rgb(0, 101, 12),rgb(3, 170, 0) ) ;
+    background:linear-gradient( to bottom,black, rgb(3, 170, 0) ) ;
     img{
         width: 90px;
     }
-    a{
-        color: black;
-    }
-    a:hover{
-        color: rgb(3, 193, 0);
-        filter: drop-shadow(2px 2px 2px black);
-    transition: 0.3s ease-in-out;
-    }
   }
  .bg-footer{
-    background:linear-gradient( to top,rgb(0, 101, 12),rgb(3, 170, 0) ) ;
+    background:linear-gradient( to top,black,rgb(3, 170, 0) ) ;
  }
  .main{
     background-color: rgb(3, 170, 0);
  }
  .contenedorm{
     background-color: rgb(216, 104, 126);
+    
     padding: 50px;
     margin: 0 100px;
     border-radius: 15px;    
@@ -210,4 +203,72 @@ button {
   .fil0 {
     fill: #fffdef;
   }
-  
+  /* From Uiverse.io by cssbuttons-io */ 
+button2 {
+  font-size: 18px;
+  background-color: #008542;
+  color: #fff;
+  text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0;
+  z-index: 1;
+  user-select: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: unset;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 900;
+  transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+
+button2:before {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+  z-index: -1;
+  background-color: #008542 !important;
+  box-shadow: 0 -4px rgb(21 108 0 / 50%) inset,
+    0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset,
+    4px 0 rgb(21 108 0 / 50%) inset;
+}
+
+button2:after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+  transition: 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+
+button2:hover:before {
+  box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset,
+    -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+}
+
+button2:hover:after {
+  box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+}
+
+button2:active {
+  transform: translateY(4px);
+}
+
+button2:active:after {
+  box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+}
