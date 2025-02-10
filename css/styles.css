@@ -273,6 +273,7 @@ button2:active:after {
   box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
 }
 .contenedor2{
+    justify-content: center;
     padding: 5px;
 }
 .carousel-item img{
@@ -298,3 +299,23 @@ button2:active:after {
     background-color: #008542;
     border-radius: 10px;
 }
+.card-gal{
+  
+    &:hover{
+      filter: drop-shadow(20px 20px 20px black);
+      transition: 0.3s ease-in-out;
+      transform: scale(1.1);
+    }
+  img {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  }
+  }
+  .titulo1{
+    font-family: "Satisfy", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: crimson;
+  }
