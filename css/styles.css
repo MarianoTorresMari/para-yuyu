@@ -391,4 +391,18 @@ button2:active:after {
     background: #e4405f;
     color: #fff;
   }
+  .titulo-general{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+  }
+  .texto-general{
+    font-family: "Caveat", serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #008542;
+    border-radius: 5px;
+  }
   
