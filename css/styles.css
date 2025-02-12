@@ -278,8 +278,8 @@ button2:active:after {
 }
 .carousel-item img{
 
-    width: 1000px;
-    height: 800px;
+    width: 900px;
+    height: 700px;
     object-fit: cover;
     }
 #carouselExampleFade{
@@ -405,4 +405,145 @@ button2:active:after {
     background-color: #008542;
     border-radius: 5px;
   }
-  
+  .contenedor4{
+    justify-content: center;
+    padding: 5px;
+    background-color: #181818bc;
+    margin: 0 50px;
+    border-radius: 15px;
+    }
+    /* card de lufer */
+    /* From Uiverse.io by joe-herbert */ 
+/*Card design*/
+.card {
+  width: 200px;
+  height: 300px;
+  background: lightgray;
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.card > .child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: clip-path 0.6s;
+  z-index: 1;
+}
+
+.card .card-1 {
+  clip-path: polygon(0% 0%, 75% 0%, 0% 75%);
+}
+
+.card .card-1:hover {
+  clip-path: polygon(0% 0%, 170% 0%, 0% 170%);
+}
+
+.card .card-1:has(~ .card-2:hover),
+.card .card-1:has(~ .card-3:hover) {
+  clip-path: polygon(0% 0%, 15% 0%, 0% 15%);
+}
+
+.card .card-2 {
+  z-index: 0;
+}
+
+.card .card-3 {
+  clip-path: polygon(25% 100%, 100% 25%, 100% 100%);
+}
+
+.card .card-3:hover {
+  clip-path: polygon(-70% 100%, 100% -70%, 100% 100%);
+}
+
+.card .card-1:hover ~ .card-3,
+.card .card-2:hover ~ .card-3 {
+  clip-path: polygon(85% 100%, 100% 85%, 100% 100%);
+}
+
+/*Optional styles*/
+.card {
+  font: 30px Arial, Helvetica, sans-serif;
+}
+
+.card > .child {
+  /*If using background image on card children*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.6s;
+}
+
+.card .card-1 {
+  background-image:url(../img/mami.png);
+  color: white;
+  padding-top: 30%;
+  padding-left: 20%;
+}
+
+.card .card-1:hover {
+  padding-top: 65%;
+  padding-left: 48%;
+}
+
+.card .card-2 {
+  color: white;
+  padding-top: 65%;
+  padding-left: 48%;
+ background-image: url(../img/hijo.png);
+}
+
+.card .card-3 {
+  color: white;
+  padding-top: 100%;
+  padding-left: 76%;
+background-image: url(../img/pa.png);}
+
+.card .card-3:hover {
+  padding-top: 65%;
+  padding-left: 48%;
+}
+/* From Uiverse.io by Vikikos */ 
+.cardluf {
+  width: 200px;
+  height: 310px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+  background:#016131;
+  gap: 5px;
+  margin: 15px;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  position: relative;
+  transition: all .4s;
+ }
+ .cardluf p{
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 700;
+ }
+ 
+ .cardluf div {
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+  cursor: pointer;
+  z-index: 10;
+  transition: all .4s;
+  background-color: #fff;
+  img{
+    border-radius: 20px;
+  }
+ }
+ 
+ .cardluf:hover div {
+  transform: translateY(-30px);
+ }
